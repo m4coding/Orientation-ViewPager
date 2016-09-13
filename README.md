@@ -11,6 +11,11 @@
 
 ![](http://i.imgur.com/DlJmIqP.gif)
 
+
+## 引入 ##
+
+	compile 'com.mcs.development:orientation-viewpager:1.0.0'
+
 ## 使用 ##
 
 	<!--Horizontal ViewPager-->
