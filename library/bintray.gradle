@@ -1,0 +1,11 @@
+apply plugin: 'com.novoda.bintray-release'//使用bintray-release插件
+
+//发布
+publish {
+    userOrg = 'mcshenginworking'//bintray.com用户名
+    groupId = 'com.mcs.development'//jcenter上的路径
+    artifactId = 'orientation-viewpager'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'A ViewPager that can be set horizontal orientation or vertical orientation'
+    website = 'https://github.com/mcshengInworking/Orientation-ViewPager.git'
+}
