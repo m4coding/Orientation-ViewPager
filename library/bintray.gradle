@@ -1,4 +1,20 @@
+/**
+ * upload package to bintray
+ */
+apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'//使用bintray-release插件
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8') //使用utf-8编码
+}
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
 
 //发布
 publish {
